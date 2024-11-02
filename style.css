@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(252, 227, 231);
+}
+
+.container .navbar {
+    background-color: white;
+    height: 4rem;
+    width: 27rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2rem; */
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.container .navbar a {
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    z-index: 2222;
+}
+
+
+.container .navbar a i {
+    /* background-color: rgb(53, 31, 31); */
+    padding: 1.4rem 2rem;
+
+}
+
+
+
+
+.container .navbar .toggle-box {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background-color: rgb(255, 250, 250);
+    left: 0;
+    z-index: 1111;
+    transition: .3s;
+    border-right: 1px solid rgb(249, 243, 244);
+    border-left: 1px solid rgb(249, 243, 244);
+}
+
+.container .navbar .toggle-box .top-bar {
+    position: absolute;
+    height: .3rem;
+    width: 100%;
+    background-color: pink;
+
+    top: 0;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.container .navbar .toggle-box .bottom-bar {
+    position: absolute;
+    height: .3rem;
+    width: 100%;
+    background-color: pink;
+    bottom: 0;
+    border-radius: 10px 10px 0 0;
+
+}
+
+@media (max-width:700px) {
+    .container .navbar {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .container .navbar a i {
+        padding: 1.4rem 1.5rem;
+    }
+
+}
